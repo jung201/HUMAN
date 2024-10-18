@@ -4,17 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
-import Clock from './chapter/chapter_04/Clock';
-import CommentList from './chapter/chapter_05/CommentList';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Clock />
-    <CommentList />
-
   </React.StrictMode>
 );
 
