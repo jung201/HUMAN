@@ -2,14 +2,13 @@
 import React from "react";
 import styles from "./header.module.scss";
 import { Link } from 'react-router-dom';
-import logo from "../img/withDreamLogo2.png";
 
 function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.top}>
         <Link to="/main" className="logo_pic" id="logo_picMain">
-          <img src={logo} alt="logo" />
+          <img src="/img/logo.png" alt="logo" />
         </Link>
         <div className={styles.jlmToBtn}>
           <button type="button" id="joinBtn">
