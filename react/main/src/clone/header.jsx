@@ -1,13 +1,34 @@
 // App.jsx
 import React from 'react';
-import styles from './header.module.scss';  // SCSS 모듈 불러오기
+import styles from './header.module.scss'; 
+import logo from '../img/withDreamLogo2.png';
 
-function Header() {  // 함수명 대문자로 변경
+function Header() {
   return (
-    <div className={styles.app}>
-      <h1 className={styles.title}>SCSS 모듈 사용하기</h1>
-    </div>
+    <header className={styles.header}>
+      <div className={styles.top}>
+        <a className={styles.logo_pic} id="logo_picMain" href="./../HTML/mainpage/main.html.">
+          <img src={logo} alt="logo" />
+        </a>
+        <div className={styles.jlmToBtn}>
+              <button type="button" id="joinBtn">Join</button>
+              <button type="button" id="loginBtn">Login</button>
+              <button type="button" id="mypageBtn">MyPage</button>
+              <button type="button" id="logoutBtn">Logout</button>
+        </div>
+      </div>
+      <div className={styles.scroll}>
+        <div className={styles.menu}>
+          <ul className={styles.menu_inner}>
+            <li id="ToHome">홈</li>
+            <li id="ToList">펀딩 리스트</li>
+            <li id="Toend">종료 펀딩</li>
+            <li id="Topurchase_1">작품 구매</li>
+          </ul>
+        </div>
+      </div>
+    </header>
   );
 }
 
-export default Header;  // 대문자로 변경
+export default Header;
