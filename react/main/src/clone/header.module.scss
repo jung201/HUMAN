@@ -1,0 +1,11 @@
+$primary-color: #3498db;
+
+.App {
+  text-align: center;
+  background-color: $primary-color;
+
+  .title {
+    color: white;
+    font-size: 2rem;
+  }
+}
