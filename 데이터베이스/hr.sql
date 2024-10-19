@@ -12,7 +12,7 @@ select *
 select country_id, country_name
     from countries;
     
-select country_id AS ±¹°¡ID, country_name AS ±¹°¡¸í
+select country_id AS ï¿½ï¿½ï¿½ï¿½ID, country_name AS ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     from countries;
 
 select distinct region_id
@@ -116,27 +116,27 @@ select *
 -- order by
 select first_name, last_name
     from employees
-    order by first_name; -- first_nameÀ¸·Î ¿À¸§Â÷¼ø
+    order by first_name; -- first_nameï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     
 select first_name, last_name
     from employees
-    order by first_name desc; -- ³»¸²Â÷¼ø
+    order by first_name desc; -- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 select department_name
     from departments
-    order by department_name desc; -- ³»¸²Â÷¼ø 
+    order by department_name desc; -- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 
 select country_id, city
     from locations
     order by country_id, city; 
--- country_id ±âÁØÀ¸·Î ¿À¸§Â÷¼ø Á¤·Ä, ±× ´ÙÀ½ city°ªÀ¸·Î Á¤·Ä
+-- country_id ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ cityï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 select location_id, department_name
     from departments
     order by location_id desc, department_name;
 
--- between ¿¬»êÀÚ
--- µÎ °ªÀÇ ¹üÀ§¿¡ ÇØ´çÇÏ´Â µ¥ÀÌÅÍ¸¸ Ãâ·ÂÇÒ¶§ »ç¿ëµÇ´Â È®Àå¿¬»êÀÚ
+-- between ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+-- ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½Ò¶ï¿½ ï¿½ï¿½ï¿½Ç´ï¿½ È®ï¿½å¿¬ï¿½ï¿½ï¿½ï¿½
 select * 
     from employees
     where employee_id between 120 and 130;
@@ -146,8 +146,8 @@ select *
     where salary between 10000 and 12000
     order by salary;
 
--- IN ¿¬»êÀÚ
--- ¿©·¯ °³ÀÇ µ¥ÀÌÅÍ °ªÀ» ÁöÁ¤ÇÏ¿© ÀÏÄ¡ÇÏ´Â µ¥ÀÌÅÍ¸¸ Ãâ·ÂÇÒ ¶§ »ç¿ë
+-- IN ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½Ä¡ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½
 select *
     from employees
     where first_name in ('Steven', 'John', 'Peter')
@@ -165,8 +165,8 @@ select *
     from locations
     where city not in ('Sao Paulo' , 'London' , 'Southlake' );
     
--- IS NULL ¿¬»êÀÚ
--- Æ¯Á¤ ¼Ó¼ºÀÇ °ªÀÌ NULL °ªÀÎÁö¸¦ ºñ±³ÇÏ¿© µ¥ÀÌÅÍ Á¶È¸
+-- IS NULL ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+-- Æ¯ï¿½ï¿½ ï¿½Ó¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ NULL ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸
 
 select *
     from locations
@@ -177,32 +177,32 @@ select *
     where commission_pct is not null
     order by commission_pct;
 
--- Like ¿¬»êÀÚ
--- ¹®ÀÚ¿­ ¼Ó¼º¿¡¼­ ºÎºÐÀûÀ¸·Î ÀÏÄ¡ÇÏ´Â °Í¸¸ Ãâ·ÂÇÒ ¶§ »ç¿ë
--- % 0°³ ÀÌ»óÀÇ ¹®ÀÚ ( ¹®ÀÚÀÇ ³»¿ë°ú °³¼ö´Â »ó°ü ¾øÀ½ )
--- _ 1°³ÀÇ ¹®ÀÚ ( ¹®ÀÚÀÇ ³»¿ëÀº »ó°ü ¾øÀ½ )
+-- Like ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+-- ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½Ó¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Îºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½Ï´ï¿½ ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½
+-- % 0ï¿½ï¿½ ï¿½Ì»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ( ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ )
+-- _ 1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ( ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ )
 
 select *
     from locations
     where city like 'South%';
--- South·Î ½ÃÀÛÇÏ´Â ¹®ÀÚ¿­ 
+-- Southï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ 
 
 select *
     from locations
     where street_address like '%St';
--- St·Î ³¡³ª´Â ¹®ÀÚ¿­
+-- Stï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
 
 select * 
     from locations
     where city like 'South____';
--- South·Î ½ÃÀÛÇÏ´Â 9ÀÚ¸® ¹®ÀÚ¿­
+-- Southï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ 9ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½
 
--- ÁýÇÕ ¿¬»êÀÚ
--- ¿¬»êÀÚ ¾ÕµÚÀÇ °ªÀ» ºñ±³ÇÏ¿© µ¥ÀÌÅÍ Á¶È¸
--- union ÇÕÁýÇÕ ( Áßº¹ Á¦¿Ü )
--- union all ÇÕÁýÇÕ ( Áßº¹ Æ÷ÇÔ )
--- minus Â÷ÁýÇÕ
--- intersect ±³ÁýÇÕ
+-- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Õµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸
+-- union ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ( ï¿½ßºï¿½ ï¿½ï¿½ï¿½ï¿½ )
+-- union all ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ( ï¿½ßºï¿½ ï¿½ï¿½ï¿½ï¿½ )
+-- minus ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+-- intersect ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 select employee_id, first_name, department_id
     from employees
@@ -212,7 +212,7 @@ select employee_id, first_name, department_id
     from employees
     where department_id = 100;
 
--- ÇÕÁýÇÕÀº °°Àº¼Ó¼ºÀ¸·Î ¹­¿©ÀÖ´Â°Í¸¸ °¡´É
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´Â°Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 select employee_id, first_name
     from employees
@@ -221,7 +221,7 @@ union all
 select employee_id, first_name
     from employees
     where employee_id >= 140;
--- ÇÕÁýÇÕ Áßº¹Æ÷ÇÔ
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ßºï¿½ï¿½ï¿½ï¿½ï¿½
 
 select employee_id, first_name
     from employees
@@ -230,7 +230,7 @@ minus
 select employee_id, first_name
     from employees
     where employee_id >= 140;
--- Â÷ÁýÇÕ 140 ÀÌ»óÀÎ°Í Á¦¿Ü
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 140 ï¿½Ì»ï¿½ï¿½Î°ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 select employee_id, first_name
     from employees
@@ -239,7 +239,7 @@ intersect
 select employee_id, first_name
     from employees
     where employee_id >= 140;
--- ±³ÁýÇÕ 140~160
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 140~160
 
 select job_title
     from jobs
