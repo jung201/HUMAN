@@ -1,20 +1,29 @@
 // App.jsx
-import React from 'react';
-import styles from './header.module.scss'; 
-import logo from '../img/withDreamLogo2.png';
+import React from "react";
+import styles from "./header.module.scss";
+import { Link } from 'react-router-dom';
+import logo from "../img/withDreamLogo2.png";
 
 function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.top}>
-        <a className={styles.logo_pic} id="logo_picMain" href="./../HTML/mainpage/main.html.">
+        <Link to="/main" className="logo_pic" id="logo_picMain">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
         <div className={styles.jlmToBtn}>
-              <button type="button" id="joinBtn">Join</button>
-              <button type="button" id="loginBtn">Login</button>
-              <button type="button" id="mypageBtn">MyPage</button>
-              <button type="button" id="logoutBtn">Logout</button>
+          <button type="button" id="joinBtn">
+            Join
+          </button>
+          <button type="button" id="loginBtn">
+            Login
+          </button>
+          <button type="button" id="mypageBtn">
+            MyPage
+          </button>
+          <button type="button" id="logoutBtn">
+            Logout
+          </button>
         </div>
       </div>
       <div className={styles.scroll}>
