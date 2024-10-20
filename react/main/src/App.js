@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
     return (
         <Router>
-            {/* Header 컴포넌트가 모든 페이지에 공통으로12 표시됩니다 */}
             <Header />
             <Routes>
                 {/* 예시로 몇 가지 페이지 추가 */}
